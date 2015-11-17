@@ -38,7 +38,7 @@ gulp.task('copyNpmDependenciesAtDifferentFolder', function() {
 // value in './path/to/package.json' file
 gulp.task('copyAllNpmDependenciesAtDifferentFolder', function() {
   gulp
-    .src(gnf(null, './path/to/package.json'), {base:'./'})
+    .src(gnf(true, './path/to/package.json'), {base:'./'})
     .pipe(gulp.dest('./build'));
 });
 
